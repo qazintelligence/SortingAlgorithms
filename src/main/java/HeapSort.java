@@ -14,12 +14,12 @@ class HeapSort {
         }
 
 
-        System.out.println("The unsorted array is:");
+        System.out.println("before:");
         System.out.println(Arrays.toString(arr1));
 
         heap(arr1);
 
-        System.out.println("The sorted array is:");
+        System.out.println("after:");
         System.out.println(Arrays.toString(arr1));
     }
 
