@@ -1,13 +1,22 @@
+import java.util.Random;
 
 public class QuickSort {
 
     public static void main(String[] args) {
 
-        int num [] = {10,9,8,7,6,5,4,3,2,1};
+        Random rand = new Random();
+        int[] numbers = new int[10];
 
-        Quicksort(num, 0, num.length -1);
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = rand.nextInt(1000);
+        }
+        System.out.println("before:");
+        print(numbers);
 
-        print(num);
+        Quicksort(numbers, 0, numbers.length -1);
+
+        System.out.println("\nafter:");
+        print(numbers);
     }
 
 
